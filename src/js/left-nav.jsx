@@ -78,14 +78,14 @@ var LeftNav = React.createClass({
             zDepth={0}
             menuItems={this.props.menuItems}
             selectedIndex={selectedIndex}
-            onItemClick={this._onMenuItemClick} />
+            onItemTap={this._onMenuItemTap} />
 
         </Paper>
       </div>
     );
   },
 
-  _onMenuItemClick: function(e, key, payload) {
+  _onMenuItemTap: function(e, key, payload) {
     if (this.props.onChange && this.props.selectedIndex !== key) {
       this.props.onChange(e, key, payload);
     }
