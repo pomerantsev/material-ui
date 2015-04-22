@@ -4,6 +4,3 @@ build
 
 # jsx Transform Disk Cache
 .module-cache
-
-# Exclude compiled files
-lib
